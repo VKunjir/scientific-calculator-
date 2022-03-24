@@ -1,0 +1,2051 @@
+ #include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+void art(void);
+class cal
+{
+ public:
+   int art();
+   int log();
+   int tri();
+   int convert();
+};
+//Addition
+ void add()
+{  	double p,q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"ADDITION OF NUMBER "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter two number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	gotoxy(4,5);
+	cin>>q;
+	gotoxy(4,6);
+	cout<<"Sum is "<<p+q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+}
+//substraction
+ void sub()
+ {  double  p,q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"SUBSTRACTION OF NUMBER "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter two number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	gotoxy(4,5);
+	cin>>q;
+	gotoxy(4,6);
+	cout<<"Substraction is "<<p-q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+}
+//Multiplication
+ void mul()
+{  	double p,q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"MULTIPLICATION OF NUMBER "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter two number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	gotoxy(4,5);
+	cin>>q;
+	gotoxy(4,6);
+	cout<<"Multiplication  is "<<p*q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+}
+//Division
+void div()
+{  	double p,q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"DIVISION OF NUMBER "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter two number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	gotoxy(4,5);
+	cin>>q;
+	gotoxy(4,6);
+	cout<<"Division is "<<p/q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+}
+// Power function
+int po()
+{
+	double p,q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"POWER FUNCTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter base number & power number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	gotoxy(4,5);
+	cin>>q;
+	gotoxy(4,6);
+	cout<<"Power of "<<p<<"^"<<q<<" is "<<pow(p,q);
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+}
+//square root  function
+int sq()
+{
+	double p;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"SQUARE ROOT FUNCTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	gotoxy(4,6);
+	cout<<"Square root of "<<p<<" is "<<sqrt(p);
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+}
+//******   ************** *    **********
+// Factorial function
+void fac()
+{
+	int p,q=1,i;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"FACTORIAL FUNCTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter  number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	for(i=1;i<=p;i++)
+	{	q=q*i;	}
+	gotoxy(4,6);
+	cout<<"Factorial of "<<p<<" is "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+}
+
+ //Using membership label for art to be memeber of cal class
+ int cal::art()
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int a,b,c;
+
+ gotoxy(20,10);
+ cout<<"Enter 1 for Addition : "<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 2 for Substration : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 3 for Mulipication : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 4 for Division : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 5 for Power : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter 6 for Square : "<<endl;
+ gotoxy(20,16);
+ cout<<"Enter 7 for factrial : "<<endl;
+ gotoxy(20,17);
+ cout<<"Enter 8 to exit : "<<endl;
+ gotoxy(20,19);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,20);
+ cin>>c;
+ switch(c)
+  {
+  case 1: add(); break;
+  case 2: sub(); break;
+  case 3: mul(); break;
+  case 4: div(); break;
+  case 5: po(); break;
+  case 6: sq(); break;
+  case 7: fac(); break;
+  case 8: return(0);
+  }
+  }
+ }
+ //log to base e
+ void log_e()
+ {
+	double p,q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"LOG TO BASE e "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter a number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	q=log(p);
+	gotoxy(4,5);
+	cout<<"log to base e is "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //log to base 10
+ void log_10()
+ {
+	double p,q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"LOG TO BASE 10 "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter a number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	q=log10(p);
+	gotoxy(4,5);
+	cout<<"log to base 10 is "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //anti_log to base e
+ void anti_log()
+ {
+	double p,q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"ANTILOG OF BASE e "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter a number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	q=pow(2.718281828,p);
+	gotoxy(4,5);
+	cout<<"Antilog of base e is "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //anti_log of base 10
+ void anti_log10()
+ {
+	double p,q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"ANTILOG OF BASE 10 "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter a number "<<endl;
+	gotoxy(4,4);
+	cin>>p;
+	q=pow(10,p);
+	gotoxy(4,5);
+	cout<<"Antilog of base 10 is "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+
+ //Logarithmic funtion
+ int cal::log()
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int a,b,c;
+
+ gotoxy(20,10);
+ cout<<"Enter 1 for Log to base e : "<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 2 for Log to base 10 : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 3 for Antilog of base e : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 4 for Antilog of base 10  : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 5 to exit : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,16);
+ cin>>c;
+ switch(c)
+  {
+  case 1: log_e(); break;
+  case 2: log_10(); break;
+  case 3: anti_log(); break;
+  case 4: anti_log10(); break;
+  case 5: return(0);
+	}
+  }
+ }
+//sine funtion
+ void si()
+ {
+	double a,b,c,pi=3.14159265,d=180,result;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"SINE FUNTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter angle "<<endl;
+	gotoxy(4,4);
+	cin>>a;
+	b=a*pi;
+	c=b/d;
+	result=sin(c);
+	gotoxy(4,5);
+	cout<<"sine value of "<<a<<" is "<<result<<endl;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //cosine funtion
+ void co()
+ {
+	double a,b,c,pi=3.14159265,d=180,result;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"COSINE FUNTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter angle "<<endl;
+	gotoxy(4,4);
+	cin>>a;
+	b=a*pi;
+	c=b/d;
+	result=cos(c);
+	gotoxy(4,5);
+	cout<<"cosine value of "<<a<<" is "<<result<<endl;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //tan funtion
+ void ta()
+ {
+	double a,b,c,pi=3.14159265,d=180,result;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"TAN FUNTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter angle "<<endl;
+	gotoxy(4,4);
+	cin>>a;
+	b=a*pi;
+	c=b/d;
+	result=tan(c);
+	gotoxy(4,5);
+	cout<<"tan value of "<<a<<" is "<<result<<endl;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //inverse of sine funtion
+ void is()
+ {
+	double a,b,c,pi=3.14159265,d=180,result;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"INVERSE OF SINE FUNTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter a number "<<endl;
+	gotoxy(4,4);
+	cin>>a;
+	b=asin(a);
+	c=b*d;
+	result=c/pi;
+	gotoxy(4,5);
+	cout<<" Sine Inverse of  "<<a<<" is "<<result<<endl;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //inverse of cosine funtion
+ void ic()
+ {
+	double a,b,c,pi=3.14159265,d=180,result;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"INVERSE OF COSINE FUNTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter a number "<<endl;
+	gotoxy(4,4);
+	cin>>a;
+	b=acos(a);
+	c=b*d;
+	result=c/pi;
+	gotoxy(4,5);
+	cout<<" Cosine Inverse of  "<<a<<" is "<<result<<endl;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+  //inverse of tan funtion
+ void it()
+ {
+	double a,b,c,pi=3.14159265,d=180,result;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"Inverse OF SINE FUNTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter a number "<<endl;
+	gotoxy(4,4);
+	cin>>a;
+	b=atan(a);
+	c=b*d;
+	result=c/pi;
+	gotoxy(4,5);
+	cout<<" Tan Inverse of  "<<a<<" is "<<result<<endl;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//cosec funtion
+ void cose()
+ {
+	double a,b,c,pi=3.14159265,d=180,result;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"COSEC FUNTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter angle "<<endl;
+	gotoxy(4,4);
+	cin>>a;
+	b=a*pi;
+	c=b/d;
+	result=1/sin(c);
+	gotoxy(4,5);
+	cout<<"cosec value of "<<a<<" is "<<result<<endl;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//sec funtion
+ void se()
+ {
+	double a,b,c,pi=3.14159265,d=180,result;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"SEC FUNTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter angle "<<endl;
+	gotoxy(4,4);
+	cin>>a;
+	b=a*pi;
+	c=b/d;
+	result=1/cos(c);
+	gotoxy(4,5);
+	cout<<"sec value of "<<a<<" is "<<result<<endl;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//cot funtion
+ void cott()
+ {
+	double a,b,c,pi=3.14159265,d=180,result;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"COT FUNTION "<<endl;
+	gotoxy(4,3);
+	cout<<"Enter angle "<<endl;
+	gotoxy(4,4);
+	cin>>a;
+	b=a*pi;
+	c=b/d;
+	result=1/tan(c);
+	gotoxy(4,5);
+	cout<<"tan value of "<<a<<" is "<<result<<endl;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//Trigonomatric  function
+ int cal::tri()
+{
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+
+ gotoxy(20,10);
+ cout<<"Enter 1 for sin : "<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 2 for cos : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 3 for tan : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 4 for cosec : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 5 for sec : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter 6 for cot : "<<endl;
+ gotoxy(20,16);
+ cout<<"Enter 7 for sin inverse : "<<endl;
+ gotoxy(20,17);
+ cout<<"Enter 8 for cos inverse : "<<endl;
+ gotoxy(20,18);
+ cout<<"Enter 9 for tan inverse : "<<endl;
+ gotoxy(20,19);
+ cout<<"Enter 10 to exit : "<<endl;
+ gotoxy(20,20);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,21);
+ cin>>c;
+ switch(c)
+  {
+  case 1: si(); break;
+  case 2: co(); break;
+  case 3: ta(); break;
+  case 4: cose(); break;
+  case 5: se(); break;
+  case 6: cott(); break;
+  case 7: is(); break;
+  case 8: ic(); break;
+  case 9: it(); break;
+  case 10: return(0);
+  }
+  }
+ }
+ //************************
+//ind to usd
+void IND_USD(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"Indian Rupee to US Dollor "<<endl;
+	q=p*0.013;
+	gotoxy(4,4);
+	cout<<"US dollor = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //indian to UK pound
+void IND_UKP(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"Indian Rupee to UK Pound "<<endl;
+	q=p*0.01;
+	gotoxy(4,4);
+	cout<<"UK pound = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //Indian rupee to euro
+void IND_ER(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"Indian Rupee to EURO "<<endl;
+	q=p*0.012;
+	gotoxy(4,4);
+	cout<<"Euro = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //Indian rupee to yen
+ void IND_YEN(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"Indian Rupee to Japanese Yen "<<endl;
+	q=p*1.55;
+	gotoxy(4,4);
+	cout<<"Japanese yen = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+
+
+//Indian rupee  funtion
+ int IND(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,10);
+ cout<<"Indian rupees to which currency you want to convert :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for US Dollar : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for UK Pound : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 for EURO  : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 4 for Japenese Yen : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter 5 to exit : "<<endl;
+ gotoxy(20,17);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,19);
+ cin>>c;
+ switch(c)
+  {
+  case 1: IND_USD(x); break;
+  case 2: IND_UKP(x); break;
+  case 3: IND_ER(x); break;
+  case 4: IND_YEN(x); break;
+  case 5: return(0);
+  }
+  }
+ }
+//****************************************
+//usd to ind
+void USD_IND(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"US Dollor to Indian Rupee "<<endl;
+	q=p*76.32;
+	gotoxy(4,4);
+	cout<<"Indian rupee = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //USD to UK pound
+void USD_UKP(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"US Dollor to UK Pound "<<endl;
+	q=p*0.77;
+	gotoxy(4,4);
+	cout<<"UK pound = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //USD to euro
+void USD_ER(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"US Dollor to EURO "<<endl;
+	q=p*0.91;
+	gotoxy(4,4);
+	cout<<"Euro = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //USD to yen
+ void USD_YEN(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"US Dollor to Japanese Yen "<<endl;
+	q=p*118.02;
+	gotoxy(4,4);
+	cout<<"Japanese yen = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+
+
+   //US Dollor  funtion
+ int USD(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,10);
+ cout<<"US DOLLER to which currency you want to convert :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for Indian rupee : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for UK Pound : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 for EURO  : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 4 for Japenese Yen : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter 5 to exit : "<<endl;
+ gotoxy(20,17);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,19);
+ cin>>c;
+ switch(c)
+  {
+  case 1: USD_IND(x); break;
+  case 2: USD_UKP(x); break;
+  case 3: USD_ER(x); break;
+  case 4: USD_YEN(x); break;
+  case 5: return(0);
+  }
+  }
+ }
+//*----------------------------------************
+ //UKP to ind
+void UKP_IND(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"UK Pound to Indian Rupee "<<endl;
+	q=p*99.67;
+	gotoxy(4,4);
+	cout<<"Indian rupee = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //UKP to USD
+void UKP_USD(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"UK Pound to US Dollor "<<endl;
+	q=p*1.3;
+	gotoxy(4,4);
+	cout<<"US Dollor = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //UKP to euro
+void UKP_ER(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"UK Pound to EURO "<<endl;
+	q=p*1.19;
+	gotoxy(4,4);
+	cout<<"Euro = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //UKP to yen
+ void UKP_YEN(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"UK Pound to Japanese Yen "<<endl;
+	q=p*154.38;
+	gotoxy(4,4);
+	cout<<"Japanese yen = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+
+   //UK POUND  funtion
+ int UKP(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,10);
+ cout<<"UK POUND to which currency you want to convert :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for Indian rupee : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for US Dollor : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 for EURO  : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 4 for Japenese Yen : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter 5 to exit : "<<endl;
+ gotoxy(20,17);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,19);
+ cin>>c;
+ switch(c)
+  {
+  case 1: UKP_IND(x); break;
+  case 2: UKP_USD(x); break;
+  case 3: UKP_ER(x); break;
+  case 4: UKP_YEN(x); break;
+  case 5: return(0);
+  }
+  }
+ }
+ //********++++++++++++++++++++++++++++++++++++
+  //ER to ind
+void ER_IND(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"EURO to Indian Rupee "<<endl;
+	q=p*83.91;
+	gotoxy(4,4);
+	cout<<"Indian rupee = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //ER to USD
+void ER_USD(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"EURO to US Dollor "<<endl;
+	q=p*1.1;
+	gotoxy(4,4);
+	cout<<"US Dollor = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //UKP to euro
+void ER_UKP(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"EURO to UK Pound "<<endl;
+	q=p*0.84;
+	gotoxy(4,4);
+	cout<<"UK Pound = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //ER to yen
+ void ER_YEN(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"EURO to Japanese Yen "<<endl;
+	q=p*129.83;
+	gotoxy(4,4);
+	cout<<"Japanese yen = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+
+   //ER  funtion
+ int ER(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,10);
+ cout<<"EURO to which currency you want to convert :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for Indian rupee : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for US Dollor : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 for UK Pound  : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 4 for Japenese Yen : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter 5 to exit : "<<endl;
+ gotoxy(20,17);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,19);
+ cin>>c;
+ switch(c)
+  {
+  case 1: ER_IND(x); break;
+  case 2: ER_USD(x); break;
+  case 3: ER_UKP(x); break;
+  case 4: ER_YEN(x); break;
+  case 5: return(0);
+  }
+  }
+ }
+//*****-------------+++++++++++-------++++----+---+++++++++++++
+  //YEN to ind
+void YEN_IND(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"Japanese Yen to Indian Rupee "<<endl;
+	q=p*0.65;
+	gotoxy(4,4);
+	cout<<"Indian rupee = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //YEN to USD
+void YEN_USD(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"Japanese Yen to US Dollor "<<endl;
+	q=p*0.0085;
+	gotoxy(4,4);
+	cout<<"US Dollor = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //YEN to euro
+void YEN_UKP(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"Japanese Yen to UK Pound "<<endl;
+	q=p*0.0065;
+	gotoxy(4,4);
+	cout<<"UK Pound = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //Yen to ER
+ void YEN_ER(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"Japanese Yen to EURO"<<endl;
+	q=p*0.0077;
+	gotoxy(4,4);
+	cout<<"EURO = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //YEN  funtion
+ int YEN(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,10);
+ cout<<"Japanese Yen to which currency you want to convert :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for Indian rupee : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for US Dollor : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 for UK Pound  : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 4 for Euro : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter 5 to exit : "<<endl;
+ gotoxy(20,17);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,19);
+ cin>>c;
+ switch(c)
+  {
+  case 1: YEN_IND(x); break;
+  case 2: YEN_USD(x); break;
+  case 3: YEN_UKP(x); break;
+  case 4: YEN_ER(x); break;
+  case 5: return(0);
+  }
+  }
+ }
+//curreency funtion
+ int curr()
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+ double m=0;
+   int c;
+ gotoxy(20,6);
+ cout<<"Your in Currency Function"<<endl;
+  gotoxy(20,8);
+ cout<<"Enter Amount : ";
+ cin>>m;
+ gotoxy(20,10);
+ cout<<"Which currency have you enter :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for Indian rupee : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for US Dollar : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 for UK Pound : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 4 for EURO  : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter 5 for Japenese Yen : "<<endl;
+ gotoxy(20,16);
+ cout<<"Enter 6 to exit : "<<endl;
+ gotoxy(20,17);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,18);
+ cin>>c;
+ switch(c)
+  {
+  case 1: IND(m); break;
+  case 2: USD(m); break;
+  case 3: UKP(m); break;
+  case 4: ER(m); break;
+  case 5: YEN(m); break;
+  case 6: return(0);
+  }
+  }
+ }
+//****************************************************************************
+ //km to m
+ void KM_M(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"KILOMETER TO METER"<<endl;
+	q=p*1000;
+	gotoxy(4,4);
+	cout<<p<<"km = "<<q<<" m";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//************
+ //km to cm
+ void KM_CM(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"KILOMETER TO CENTIMETER"<<endl;
+	q=p*100000;
+	gotoxy(4,4);
+	cout<<p<<"km = "<<q<<" cm";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//*****************
+ // km to mm
+ void KM_MM(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"KILOMETER TO MILIMETER"<<endl;
+	q=p*1000000;
+	gotoxy(4,4);
+	cout<<p<<"km = "<<q<<" mm";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ // meter funtion
+int KM(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,6);
+ cout<<"Kilometer to which dimension you want to convert :"<<endl;
+ gotoxy(20,7);
+ cout<<"Enter 1 for mm : "<<endl;
+ gotoxy(20,8);
+ cout<<"Enter 2 for cm : "<<endl;
+ gotoxy(20,9);
+ cout<<"Enter 3 for m  : "<<endl;
+ gotoxy(20,10);
+ cout<<"Enter 4 to exit : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,13);
+ cin>>c;
+ switch(c)
+  {
+  case 1: KM_MM(x); break;
+  case 2: KM_CM(x); break;
+  case 3: KM_M(x); break;
+  case 4: return(0);
+  }
+  }
+ }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ //m to km
+ void M_KM(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"METER TO KILOMETER"<<endl;
+	q=p*0.001;
+	gotoxy(4,4);
+	cout<<p<<"m = "<<q<<" km";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//************
+ //m to cm
+ void M_CM(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"METER TO CENTIMETER"<<endl;
+	q=p*100;
+	gotoxy(4,4);
+	cout<<p<<"m = "<<q<<" cm";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//*****************
+ // m to mm
+ void M_MM(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"METER TO MILIMETER"<<endl;
+	q=p*1000;
+	gotoxy(4,4);
+	cout<<p<<"m = "<<q<<" mm";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ // meter funtion
+int M(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,6);
+ cout<<"Meter to which dimension you want to convert :"<<endl;
+ gotoxy(20,7);
+ cout<<"Enter 1 for mm : "<<endl;
+ gotoxy(20,8);
+ cout<<"Enter 2 for cm : "<<endl;
+ gotoxy(20,9);
+ cout<<"Enter 3 for km  : "<<endl;
+ gotoxy(20,10);
+ cout<<"Enter 4 to exit : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,13);
+ cin>>c;
+ switch(c)
+  {
+  case 1: M_MM(x); break;
+  case 2: M_CM(x); break;
+  case 3: M_KM(x); break;
+  case 4: return(0);
+  }
+  }
+ }
+//***********************************************************+++++++++++++
+ //cm to km
+ void CM_KM(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"CENTIMETER TO KILOMETER"<<endl;
+	q=p*0.00001;
+	gotoxy(4,4);
+	cout<<p<<"cm = "<<q<<" km";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//************
+ //cm to m
+ void CM_M(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"CENTIMETER TO METER"<<endl;
+	q=p*0.01;
+	gotoxy(4,4);
+	cout<<p<<"cm = "<<q<<" m";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//*****************
+ // cm to mm
+ void CM_MM(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"CENTIMETER TO MILIMETER"<<endl;
+	q=p*10;
+	gotoxy(4,4);
+	cout<<p<<"cm = "<<q<<" mm";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //Centi meter funtion
+int CM(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,6);
+ cout<<"Centimeter to which dimension you want to convert :"<<endl;
+ gotoxy(20,7);
+ cout<<"Enter 1 for mm : "<<endl;
+ gotoxy(20,8);
+ cout<<"Enter 2 for m : "<<endl;
+ gotoxy(20,9);
+ cout<<"Enter 3 for km  : "<<endl;
+ gotoxy(20,10);
+ cout<<"Enter 4 to exit : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,13);
+ cin>>c;
+ switch(c)
+  {
+  case 1: CM_MM(x); break;
+  case 2: CM_M(x); break;
+  case 3: CM_KM(x); break;
+  case 4: return(0);
+  }
+  }
+ }
+/*   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+ //mm to km
+ void MM_KM(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"MILLIMETER TO KILOMETER"<<endl;
+	q=p*0.000001;
+	gotoxy(4,4);
+	cout<<p<<"mm = "<<q<<" km";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//************
+ //mm to m
+ void MM_M(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"MILLIMETER TO METER"<<endl;
+	q=p*0.001;
+	gotoxy(4,4);
+	cout<<p<<"mm = "<<q<<" m";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+//*****************
+ //mm to cm
+ void MM_CM(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(11);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(BLACK);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"MILLIMETER TO CENTIMETER"<<endl;
+	q=p*0.1;
+	gotoxy(4,4);
+	cout<<p<<"mm = "<<q<<" cm";
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //Milli meter funtion
+int MM(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,6);
+ cout<<"Millimeter to which dimension you want to convert :"<<endl;
+ gotoxy(20,7);
+ cout<<"Enter 1 for cm : "<<endl;
+ gotoxy(20,8);
+ cout<<"Enter 2 for m : "<<endl;
+ gotoxy(20,9);
+ cout<<"Enter 3 for km  : "<<endl;
+ gotoxy(20,10);
+ cout<<"Enter 4 to exit : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,13);
+ cin>>c;
+ switch(c)
+  {
+  case 1: MM_CM(x); break;
+  case 2: MM_M(x); break;
+  case 3: MM_KM(x); break;
+  case 4: return(0);
+  }
+  }
+ }
+ //Dimension funtion
+ int dim()
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(11);
+ textcolor(RED);
+ clrscr();
+ double m=0;
+   int c;
+ gotoxy(20,2);
+ cout<<"Your in Dimension Function"<<endl;
+  gotoxy(20,4);
+ cout<<"Enter lenght(dimension) : ";
+ cin>>m;
+ gotoxy(20,6);
+ cout<<"Which Dimension have you enter :"<<endl;
+ gotoxy(20,7);
+ cout<<"Enter 1 for millimeter(mm) : "<<endl;
+ gotoxy(20,8);
+ cout<<"Enter 2 for centimeter(cm) : "<<endl;
+ gotoxy(20,9);
+ cout<<"Enter 3 for meter(m) : "<<endl;
+ gotoxy(20,10);
+ cout<<"Enter 4 for kilometer(km)  : "<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 5 to exit : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,14);
+ cin>>c;
+ switch(c)
+  {
+  case 1: MM(m); break;
+  case 2: CM(m); break;
+  case 3: M(m); break;
+  case 4: KM(m); break;
+  case 5: return(0);
+  }
+  }
+ }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++/
+
+/******************************************/
+// Fahrenheit to kelvin
+void FAH_KEL(double p)
+ {
+	double a,b;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"FAHRENHEIT TO KELVIN "<<endl;
+	a=p+459.67;
+	b=(a*5)/9;
+	gotoxy(4,4);
+	cout<<"Kelvin temperature = "<<b;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //Fahrenheit to celsius
+void FAH_CEL(double p)
+ {
+	double a,b;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"FAHRENHEIT TO CELSIUS "<<endl;
+	a=p-32;
+	b=(a*5)/9;
+	gotoxy(4,4);
+	cout<<"Celsius temperature = "<<b;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+
+// Kelvin to Fahrenheit
+void KEL_FAH(double p)
+ {
+	double a,b;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"KELVIN TO FAHRENHEIT "<<endl;
+	a=(p-273.15)*1.8;
+	b=a+32;
+	gotoxy(4,4);
+	cout<<"Fahrenheit temperature = "<<b;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //Kelvin to Celsius
+void KEL_CEL(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"KELVIN TO CELSIUS "<<endl;
+	q=p-273.15;
+	gotoxy(4,4);
+	cout<<"Celsius temperature = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //Celsius to Fahrenheit
+void CEL_FAH(double p)
+ {
+	double a,b;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"CELSIUS TO FAHRENHEIT "<<endl;
+	a=p*1.8;
+	b=a+32;
+	gotoxy(4,4);
+	cout<<"Fahrenheit temperature = "<<b;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //celsius to kelvin
+ void CEL_KEL(double p)
+ {
+	double q;
+	window(1,1,80,25);
+	textbackground(WHITE);
+	clrscr();
+	window(20,10,60,16);
+	textbackground(11);
+	clrscr();
+	gotoxy(20,10);
+	cout<<"CELSIUS TO KELVIN"<<endl;
+	q=p+273.15;
+	gotoxy(4,4);
+	cout<<"Kelvin temperature = "<<q;
+	textcolor(BLUE+BLINK);
+	gotoxy(4,7);
+	cout<<"Press any key to exit";
+	getch();
+ }
+ //**********++++++++++++++++++++---------------
+ //Sub Fahrenheit temperature  funtion
+ int fah(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,10);
+ cout<<"Fahrenheit to which temperature you want to convert :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for Celsius : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for Kelvin : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 to exit : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,15);
+ cin>>c;
+ switch(c)
+  {
+  case 1: FAH_CEL(x); break;
+  case 2: FAH_KEL(x); break;
+  case 3: return(0);
+  }
+  }
+ }
+//Sub kelvin temperature function
+  int kel(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,10);
+ cout<<"Kelvin to which temperature you want to convert :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for Celsius : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for Fahrenhiet : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 to exit : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,15);
+ cin>>c;
+ switch(c)
+  {
+  case 1: KEL_CEL(x); break;
+  case 2: KEL_FAH(x); break;
+  case 3: return(0);
+  }
+  }
+ }
+//**************
+ //Sub celsius temperature  funtion
+ int cel(double x)
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,10);
+ cout<<"Celsius to which temperature you want to convert :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for Kelvin : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for Fahrenhiet : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 to exit : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,15);
+ cin>>c;
+ switch(c)
+  {
+  case 1: CEL_KEL(x); break;
+  case 2: CEL_FAH(x); break;
+  case 3: return(0);
+  }
+  }
+ }
+//temperature funtion
+ int tem()
+ {
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+ double m=0;
+   int c;
+ gotoxy(20,6);
+ cout<<"Your in Temperature Function"<<endl;
+  gotoxy(20,8);
+ cout<<"Enter Temperature : ";
+ cin>>m;
+ gotoxy(20,10);
+ cout<<"Which Temperature have you enter :"<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 1 for Celsius  : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 2 for Kelvin : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 3 for Fahrenheit : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 4 for Exit  : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,16);
+ cin>>c;
+ switch(c)
+  {
+  case 1: cel(m); break;
+  case 2: kel(m); break;
+  case 3: fah(m); break;
+  case 4: return(0);
+  }
+  }
+ }
+
+/********************************/
+
+//conversion function
+ int cal::convert()
+{
+ while(1)
+ {
+	window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int c;
+ gotoxy(20,10);
+ cout<<"Enter 1 for Currency Conversion : "<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 2 for Temperature Conversion : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 3 for Dimension Conversion : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 4 to exit : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,15);
+ cin>>c;
+ switch(c)
+  {
+  case 1: curr(); break;
+  case 2: tem(); break;
+  case 3: dim(); break;
+  case 4: return(0);
+  }
+  }
+ }
+
+void main()
+{
+ cal obj1;
+ window(1,1,80,25);
+ textbackground(YELLOW);
+ clrscr();
+ window(20,10,60,15);
+ textbackground(BLACK);
+ clrscr();
+// textcolor(RED+BLINK);
+ gotoxy(4,3);
+ cout<<"WELCOME TO SCIENTIFIC CALCULATOR "<<endl;
+ gotoxy(4,4);
+ cout<<"Press any key to continue";
+ getch();
+
+  while(1)
+  {
+  window(1,1,80,25);
+ textbackground(WHITE);
+ textcolor(RED);
+ clrscr();
+  int a,b,c;
+
+ gotoxy(20,10);
+ cout<<"Enter 1 for Arithmatic Function : "<<endl;
+ gotoxy(20,11);
+ cout<<"Enter 2 for Trionometric Function : "<<endl;
+ gotoxy(20,12);
+ cout<<"Enter 3 for Logarthimic Function : "<<endl;
+ gotoxy(20,13);
+ cout<<"Enter 4 for Conversion Function : "<<endl;
+ gotoxy(20,14);
+ cout<<"Enter 5 to exit : "<<endl;
+ gotoxy(20,15);
+ cout<<"Enter Your choice : "<<endl;
+ gotoxy(20,16);
+ cin>>c;
+ switch(c)
+ {
+  case 1:obj1.art(); break;
+  case 3:obj1.log(); break;
+  case 2:obj1.tri(); break;
+  case 4: obj1.convert(); break;
+  case 5: exit(0);
+ }
+}
+}
